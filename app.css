@@ -1,0 +1,40 @@
+.maxmenu *{
+    font-family: 'Lato', sans-serif;
+}
+.maxmenu{
+    position: relative;
+}
+.maxmenu__list{
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    max-width: 1024px;
+    margin: auto;
+}
+.maxmenu__list li{
+    font-weight: 700;
+    padding: 1rem 0;
+}
+.maxmenu__list li:hover{
+    background: white;
+    cursor: pointer;
+}
+.maxmenu__list li span{
+    border-left: solid 1.5px #dcdcdc;
+    padding: 0 1.25rem;
+}
+.maxmenu__body{
+    background: #F5F5F5;
+    min-height: 50px;
+}
+.maxmenu__drawer{
+    position: absolute;
+    bottom: -500px;
+    left: calc(50vw - 520px);
+    padding: 1rem;
+    height: 500px;
+    width: 1024px;
+    background: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
