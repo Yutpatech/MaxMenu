@@ -10,4 +10,6 @@ One slot for each menu
 ...
 ```
 # Props
-not available
+```
+menu: Menu names(Array)
+```
