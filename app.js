@@ -8,6 +8,7 @@ function vue(){
     vuecomponents();
     new Vue({
         el: '#app',
+        menu:['Menu1','Menu2','Menu3','Menu4'],
     });
 }
 function vuecomponents(){
@@ -25,10 +26,14 @@ function vuecomponents(){
       data(){
           return{
             open: false,
-            menu:['Menu1','Menu2','Menu3','Menu4'],
             current: ''
           }
       },
+        props:{
+            menu: {
+                type: Array
+            }
+        },
       methods: {
         menuopen(e){
             this.current = e.target.innerText;
