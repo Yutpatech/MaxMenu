@@ -8,7 +8,9 @@ function vue(){
     vuecomponents();
     new Vue({
         el: '#app',
+        data: {
         menu:['Menu1','Menu2','Menu3','Menu4'],
+        }
     });
 }
 function vuecomponents(){
